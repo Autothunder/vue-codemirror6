@@ -1,5 +1,6 @@
 name: Publish package to GitHub Packages
 on:
+  workflow_dispatch:
   release:
     types: [published]
 jobs:
@@ -16,7 +17,7 @@ jobs:
           node-version: '20.x'
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
-          scope: '@octocat'
+          scope: '@Autothunder'
       - name: Install pnpm 🎁
         uses: pnpm/action-setup@v4
       - run: pnpm install
