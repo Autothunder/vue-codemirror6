@@ -147,7 +147,7 @@ export default defineConfig(({ mode, command }): UserConfig => {
         },
       },
       // Minify option
-      target: 'esnext',
+      target: 'es2018',
       // minify: mode === 'docs',
     },
   };
