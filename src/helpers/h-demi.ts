@@ -6,11 +6,10 @@
 
 import {
   h as hDemi,
-  isVue2,
   type Slots,
   type VNode,
   type VNodeProps,
-} from 'vue-demi';
+} from 'vue';
 
 interface Options extends VNodeProps {
   class?: string;
@@ -40,19 +39,9 @@ export default function h(
   options: Options = {},
   chidren?: any
 ): VNode {
-  if (isVue2) {
-    // Makeshift support :(
-    // Since Vue2.7 includes the Composition API, the functions in vue-demi are not used.
-    return hDemi(type, options, chidren);
-  }
-  const { props, domProps, on, ...extraOptions } = options;
-  const ons = on ? adaptOnsV3(on) : {};
-
-  return hDemi(
-    type,
-    { ...extraOptions, ...props, ...domProps, ...ons },
-    chidren
-  );
+  // Makeshift support :(
+  // Since Vue2.7 includes the Composition API, the functions in vue-demi are not used.
+  return hDemi(type, options, chidren);
 }
 
 export const slot = (defaultSlots: any): Slots =>

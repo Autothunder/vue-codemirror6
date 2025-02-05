@@ -43,7 +43,7 @@ import {
   type Ref,
   type ShallowRef,
   type WritableComputedRef,
-} from 'vue-demi';
+} from 'vue';
 
 import type { StyleSpec } from 'style-mod';
 
