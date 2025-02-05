@@ -26,10 +26,10 @@
     "email": "logue@hotmail.co.jp",
     "url": "https://logue.dev/"
   },
-  "homepage": "https://github.com/logue/vue-codemirror6",
+  "homepage": "https://github.com/Autothunder/vue-codemirror6",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/logue/vue-codemirror6.git"
+    "url": "git+ssh://git@github.com:Autothunder/vue-codemirror6.git"
   },
   "bugs": {
     "url": "https://github.com/logue/vue-codemirror6/issues"

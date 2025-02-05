@@ -21,5 +21,6 @@ jobs:
         uses: pnpm/action-setup@v4
       - run: pnpm install
       - run: pnpm build
+      - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
