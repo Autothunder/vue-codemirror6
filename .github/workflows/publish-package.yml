@@ -20,7 +20,7 @@ jobs:
           scope: '@Autothunder'
       - name: Install pnpm 🎁
         uses: pnpm/action-setup@v4
-      - run: cat .npmrc
+      - run: ls -la
       - run: pnpm install
       - run: pnpm build
       - run: pnpm publish
