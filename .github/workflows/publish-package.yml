@@ -20,9 +20,9 @@ jobs:
           scope: 'autothunder'
       - name: Install pnpm 🎁
         uses: pnpm/action-setup@v4
-      - run: ls -la
       - run: pnpm install
       - run: pnpm build
       - run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
